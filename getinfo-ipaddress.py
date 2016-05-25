@@ -24,7 +24,7 @@ class taobao():
 if __name__ == '__main__':
 	reload(sys)
 	sys.setdefaultencoding('utf-8')
-	f = open('/root/ipdatabase.txt', 'a')
+	f = open('/root/ipdatabase.txt', 'a') #IP地址列表
 	for i in open('/root/python/iplist', 'r').readlines(1000000):
 		ip = i.strip('\n')
 		m = taobao(ip)
